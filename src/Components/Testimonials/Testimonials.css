@@ -1,0 +1,66 @@
+.test-wrapper {
+  background-color: #fff;
+  text-align: center;
+  margin: 4rem;
+}
+.testimonials-header h4 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #818498;
+  text-transform: uppercase;
+}
+
+.testimonials {
+  display: flex;
+  gap: 3rem;
+}
+
+.test_cards {
+  padding: 5rem 0;
+}
+
+.person__img {
+  display: block;
+  margin: auto;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.person__paragraph {
+  padding: 4rem 0;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+
+  color: #5a636c;
+}
+
+.person__name {
+  margin: 40px 0 0;
+  font-family: "Barlow", sans-serif;
+  line-height: 21.6px;
+  color: #23303e;
+}
+
+.person__career {
+  color: #a7abae;
+  margin-top: 1rem;
+  line-height: 22.4px;
+  font-weight: 600;
+}
+@media screen and (max-width: 700px) {
+  .testimonials {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .testimonials {
+    flex-direction: column;
+  }
+  .person__paragraph {
+    padding: 2rem 0;
+  }
+  .test_cards {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,130 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 2rem;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+.bars {
+  position: absolute;
+  right: 2rem;
+  display: none;
+}
+/* 
+.list {
+} */
+
+.list ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.list ul li a {
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+  transition: 0.3s;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+  font-family: "Barlow", sans-serif;
+  cursor: pointer;
+}
+
+.list ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.cross {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .logo {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bars {
+    display: flex;
+  }
+  .cross {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+  .list ul {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    flex-direction: column;
+  }
+  .list ul::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border: 2rem solid transparent;
+    border-bottom-color: white;
+    border-top: 0;
+    margin-left: -2rem;
+    margin-top: -2rem;
+    border-right: 0;
+  }
+
+  .list ul li a {
+    display: block;
+    font-size: 1rem !important;
+  }
+  .list ul li a:hover {
+    background-color: hsl(51, 100%, 49%);
+  }
+  .list ul li a:focus {
+    background-color: hsl(51, 100%, 49%);
+  }
+}
+@media screen and (max-width: 750px) {
+  .list ul li a {
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .list ul li a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .list ul li a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+    margin: 0.2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .list ul li a {
+    font-size: 0.8rem;
+  }
+  .nav {
+    padding: 1.5rem;
+  }
+}

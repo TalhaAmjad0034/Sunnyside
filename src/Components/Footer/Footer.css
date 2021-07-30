@@ -1,0 +1,43 @@
+.footer {
+  background-color: white;
+}
+.img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+.actual {
+  background-color: rgb(146, 201, 190);
+  padding: 2rem;
+  text-align: center;
+}
+.footer-heading {
+  font-weight: 700;
+  color: rgb(37, 86, 75);
+  text-transform: capitalize;
+}
+.links {
+  margin-top: 2rem;
+}
+
+.links span {
+  text-transform: capitalize;
+  font-family: "barlow", sans-serif;
+  margin: 0 1rem;
+  color: rgb(37, 86, 75);
+  font-weight: 200;
+}
+
+@media screen and (max-width: 650px) {
+  .img-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img-gallery {
+    grid-template-columns: 1fr;
+  }
+}
